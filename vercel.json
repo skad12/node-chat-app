@@ -1,0 +1,14 @@
+"version": 2,
+"Build": [
+  {
+    "src": "./frontend/pages/index.js",
+    "use": "@vercel/node"
+  }
+],
+"routes": [
+
+  {
+    "src": "/(.*)",
+    "dest": "/frontend/pages/index.js"
+  }
+]
